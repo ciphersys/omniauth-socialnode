@@ -14,7 +14,9 @@ module OmniAuth
         :site => "http://socialno.de"
       }
 
-      uid { access_token.params[:id] }
+      uid { 
+        access_token.params[:id] 
+      }
       attr_reader :access_token
 
            info do
@@ -35,7 +37,8 @@ module OmniAuth
         { :raw_info => raw_info }
       end
 
-        def raw_info
+        def raw_info 
+          p "raw_info access_token.params: #{access_token.params}"
         @raw_info ||= MultiJson.load(access_token.get('/api/account/verify_credentials.json').body)
       rescue ::Errno::ETIMEDOUT
         raise ::Timeout::Error

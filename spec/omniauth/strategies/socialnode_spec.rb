@@ -7,7 +7,7 @@ describe OmniAuth::Strategies::Socialnode do
 
   context 'client options' do
     it 'should have correct name' do
-      expect(subject.options.name).to eq('twitter')
+      expect(subject.options.name).to eq('socialnode')
     end
 
     it 'should have correct site' do
