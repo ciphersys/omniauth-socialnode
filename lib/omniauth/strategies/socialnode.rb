@@ -15,7 +15,7 @@ module OmniAuth
       }
 
       uid { 
-        access_token.params[:id] 
+        raw_info['id']
       }
       attr_reader :access_token
 
