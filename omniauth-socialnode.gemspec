@@ -8,12 +8,12 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Socialnode OAuth (1.0/1.0a) strategy for OmniAuth. Based on omniauth-twitter}
   gem.homepage      = "https://github.com/ciphersys/omniauth-socialnode"
 
-  s.add_dependency 'multi_json', '~> 1.3'
-  s.add_runtime_dependency 'omniauth-oauth', '~> 1.0'
-  s.add_development_dependency 'rspec', '~> 2.7'
-  s.add_development_dependency 'rack-test'
-  s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'webmock'
+  gem.add_dependency 'multi_json', '~> 1.3'
+  gem.add_runtime_dependency 'omniauth-oauth', '~> 1.0'
+  gem.add_development_dependency 'rspec', '~> 2.7'
+  gem.add_development_dependency 'rack-test'
+  gem.add_development_dependency 'simplecov'
+  gem.add_development_dependency 'webmock'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
