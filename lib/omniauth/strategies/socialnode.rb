@@ -63,7 +63,7 @@ module OmniAuth
         if session['omniauth.params'] && session['omniauth.params']["use_authorize"] == "true"
           options.client_options.authorize_path = '/api/oauth/authorize'
         else
-          options.client_options.authorize_path = '/api/oauth/authenticate'
+          options.client_options.authorize_path = '/api/oauth/authorize'
         end
 
         old_request_phase
