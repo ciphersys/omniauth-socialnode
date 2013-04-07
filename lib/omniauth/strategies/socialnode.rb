@@ -14,7 +14,7 @@ module OmniAuth
         :site => "http://socialno.de"
       }
 
-      uid { access_token.params[:user_id] }
+      uid { access_token.params[:id] }
       attr_reader :access_token
 
            info do
